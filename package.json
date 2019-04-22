@@ -1,0 +1,24 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "a twitter bot that tweets pictures from a reddit page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "reddit",
+    "api",
+    "node"
+  ],
+  "author": "Guilherme de Assis",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "reddit-wrapper-v2": "^1.1.6",
+    "twit": "^2.2.11"
+  }
+}
