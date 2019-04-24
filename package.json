@@ -17,8 +17,10 @@
   "author": "Guilherme de Assis",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^7.0.0",
     "reddit-wrapper-v2": "^1.1.6",
+    "request": "^2.88.0",
     "twit": "^2.2.11"
   }
 }
