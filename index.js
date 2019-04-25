@@ -21,16 +21,29 @@ const redditConn = new RedditAPI({
     logs: true
 });
 
+removeExistingImages();
 getRedditData();
+
+function removeExistingImages(){
+    try{
+        for(var a = 0; a < 5 ; a++){
+            var filePath = './img/image' + a + '.jpg'; 
+            fs.unlinkSync(filePath);
+        }
+    } catch(e){
+        console.log(e);
+    }
+};
+
 
 function getRedditData(){
 	//using the reddit api to fetch data from r/blessedimages
-	redditConn.api.get("/r/blessedimages/new.json?sort=hot", {limit: 5}).then(function(response) {
+	redditConn.api.get("/r/blessedimages/new.json?sort=new", {limit: 1}).then(function(response) {
 	    var responseCode = response[0];
 	    var responseData = response[1];
 	    var count = 0;
 	    responseData.data.children.forEach(function(post){
-	    	var imageName = 'image' + count + '.jpg';
+	    	var imageName = './img/' + 'image' + count + '.jpg';
 			downloadImage(post.data.url, imageName, function(){	
 				tweetImage(imageName, count);			
 			});
@@ -55,9 +68,9 @@ function downloadImage(uri, imageName, callback){
 
 //tweeting the downloaded image
 function tweetImage(imageName, count){
-	var imagePath = './' + imageName;
-	var textStatus = 'blessed image ' + count;
-	var b64content = fs.readFileSync(imagePath, { encoding: 'base64' })
+    var randomImageCode = Math.floor(1000 + Math.random() * 9000);
+	var textStatus = 'blessed image ' + randomImageCode;
+	var b64content = fs.readFileSync(imageName, { encoding: 'base64' })
 	// Uploading media to twitter
 	T.post('media/upload', { media_data: b64content }, function (err, data, response) {	  
 		var mediaIdStr = data.media_id_string;
