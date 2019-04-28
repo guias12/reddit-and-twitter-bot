@@ -26,7 +26,7 @@ getRedditData();
 
 function removeExistingImages(){
     try{
-        for(var a = 0; a < 5 ; a++){
+        for(var a = 0; a < 2 ; a++){
             var filePath = './img/image' + a + '.jpg'; 
             fs.unlinkSync(filePath);
         }
@@ -74,9 +74,7 @@ function tweetImage(imageName, count){
 	// Uploading media to twitter
 	T.post('media/upload', { media_data: b64content }, function (err, data, response) {	  
 		var mediaIdStr = data.media_id_string;
-	  	var altText = "Some random picture from blessedimages subreddit";
-	  	var meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
-
+	  	var meta_params = { media_id: mediaIdStr}
 		T.post('media/metadata/create', meta_params, function (err, data, response) {
 	    	if (!err) {
 	      		// now we can reference the media and post a tweet (media will attach to the tweet)
