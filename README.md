@@ -19,6 +19,6 @@ then you'll need to create and configure a .env file with your informations foll
 Once your project is properly installed, you may make some changes on the code(i hope you do). Then you can deploy to your server
 to run the script you'll need to give the command
 ```bash
-  $ php rodar.php  
+  $ php run.php  
 ```
 and your bot will go online.
