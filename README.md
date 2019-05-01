@@ -1,6 +1,6 @@
 # reddit-and-twitter-bot
 A Twitter bot that tweets images from a subreddit,
-you can see(and follow :P) it working here https://twitter.com/bot_blessimages/
+you can see(and follow :P) it working <a href="https://twitter.com/bot_blessimages/">here</a> 
 
 # Installation:
 
