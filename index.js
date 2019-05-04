@@ -1,4 +1,4 @@
-require('dotenv/config');
+require('dotenv').config({ path: './credentials/credentials.env' });
 
 const Twit = require('twit');
 const RedditAPI = require('reddit-wrapper-v2');
