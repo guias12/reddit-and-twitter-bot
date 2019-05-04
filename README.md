@@ -12,7 +12,7 @@ If you wanna to use this, you'll only need to have node.js and php on your compu
   
   $npm install
 ```
-then you'll need to create and configure a .env file with your informations following the .env.example.
+then you'll need to create and configure a `credentials/.env` file with your informations following [here](credentials/README.md).
 
 # Usage: 
 
