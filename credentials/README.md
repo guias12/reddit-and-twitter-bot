@@ -1,7 +1,10 @@
 # Credentials Model
-Add on this folder the below file:
+You can get more information about those at the <a href="https://www.reddit.com/dev/api/">Reddit API docs</a> and <a href="https://developer.twitter.com/en/docs.html">Twtitter API docs</a>
+<br><br>Add on this folder the file below:
+
 
 .env
+
 ```
 TW_CONSUMER_KEY = <TWITTER_CONSUMER_KEY>
 TW_CONSUMER_SECRET = <TWITTER_CONSUMER_KEY_SECRET>
