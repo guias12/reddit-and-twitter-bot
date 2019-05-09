@@ -1,5 +1,5 @@
 # Credentials Model
-You can get more information about those at the <a href="https://www.reddit.com/dev/api/">Reddit API docs</a> and <a href="https://developer.twitter.com/en/docs.html">Twtitter API docs</a>
+You can get more information about those at the <a href="https://www.reddit.com/dev/api/">Reddit API docs</a> and <a href="https://developer.twitter.com/en/docs.html">Twitter API docs</a>
 <br><br>Add on this folder the file below:
 
 
