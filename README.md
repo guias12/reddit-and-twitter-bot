@@ -1,6 +1,8 @@
 # reddit-and-twitter-bot
 A Twitter bot that tweets images from a subreddit,
-you can see(and follow :P) it working <a href="https://twitter.com/bot_blessimages/">here</a> 
+you can see(and follow :P) it working <a href="https://twitter.com/bot_blessimages/">here</a>
+the code for the application that is running is on this <a href="https://github.com/guias12/py-twitter-reddit-bot">repo</a>
+but it's just a refactor of the code that is here
 
 # Installation:
 
